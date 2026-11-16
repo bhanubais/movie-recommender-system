@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class MovieRecommenderSystemApplication {
 
     public static void main(String[] args) {
-        RecommenderImplementation recommender = new RecommenderImplementation();
+        RecommenderImplementation recommender = new RecommenderImplementation(new CollaborativeFilter());
         String[] result = recommender.recommendMovies("Finding Dory");
         IO.println(Arrays.toString(result));
     }

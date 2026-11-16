@@ -1,9 +1,15 @@
 package io.datajek.spring.basics.movierecommendersystem.lession2;
 
 public class RecommenderImplementation {
+
+    Filter filter;
+
+    RecommenderImplementation(Filter filter) {
+        this.filter = filter;
+    }
+
     public String[] recommendMovies(String movie) {
-        //ContentBasedFilter filter = new ContentBasedFilter();
-        CollaborativeFilter filter = new CollaborativeFilter();
+        IO.println("Name of the filter is use: " + filter + "\n");
         return filter.getRecommendations(movie);
     }
 }
