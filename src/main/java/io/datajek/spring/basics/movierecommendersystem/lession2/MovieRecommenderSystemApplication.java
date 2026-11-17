@@ -12,5 +12,5 @@ public class MovieRecommenderSystemApplication {
         String[] result = recommender.recommendMovies("Finding Dory");
         IO.println(Arrays.toString(result));
     }
-
 }
+
