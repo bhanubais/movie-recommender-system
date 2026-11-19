@@ -1,11 +1,7 @@
-package io.datajek.spring.basics.movierecommendersystem.lession3;
+package io.datajek.spring.basics.movierecommendersystem.lesson2;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-@Component
 public class RecommenderImplementation {
-    @Autowired
+
     Filter filter;
 
     RecommenderImplementation(Filter filter) {

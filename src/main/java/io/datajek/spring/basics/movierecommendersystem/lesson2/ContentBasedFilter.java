@@ -1,8 +1,5 @@
-package io.datajek.spring.basics.movierecommendersystem.lession4;
+package io.datajek.spring.basics.movierecommendersystem.lesson2;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class ContentBasedFilter implements Filter {
     public String[] getRecommendations(String movie) {
         return new String[]{"Happy Feet", "Ice Age", "Shark Tale"};

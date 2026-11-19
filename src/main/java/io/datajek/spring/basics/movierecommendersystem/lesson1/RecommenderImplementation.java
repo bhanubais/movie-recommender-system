@@ -1,4 +1,4 @@
-package io.datajek.spring.basics.movierecommendersystem.lession1;
+package io.datajek.spring.basics.movierecommendersystem.lesson1;
 
 public class RecommenderImplementation {
     public String[] recommendMovies(String movie) {

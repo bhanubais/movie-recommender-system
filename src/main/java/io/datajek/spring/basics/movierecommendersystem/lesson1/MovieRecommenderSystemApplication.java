@@ -1,4 +1,4 @@
-package io.datajek.spring.basics.movierecommendersystem.lession2;
+package io.datajek.spring.basics.movierecommendersystem.lesson1;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,9 +8,9 @@ import java.util.Arrays;
 public class MovieRecommenderSystemApplication {
 
     public static void main(String[] args) {
-        RecommenderImplementation recommender = new RecommenderImplementation(new CollaborativeFilter());
+        RecommenderImplementation recommender = new RecommenderImplementation();
         String[] result = recommender.recommendMovies("Finding Dory");
         IO.println(Arrays.toString(result));
     }
-}
 
+}
